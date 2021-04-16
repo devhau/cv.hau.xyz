@@ -1,23 +1,23 @@
 <template>
   <div class="my-cv">
     <h2 class="title">{{ Personal.name }} - CV</h2>
-    <CVPersonal :data="{ ...Personal }" />
+    <CVPersonal :data="{ ...Personal }" key="CVPersonal" />
     <CVBlock
       :data="{ ...EDUCATIONAL_BACKGROUND }"
-      :key="EDUCATIONAL_BACKGROUND.Title"
+      key="EDUCATIONAL_BACKGROUND"
     />
     <CVBlock
       :data="{ ...PROFESSIONAL_SUMMARY }"
-      :key="PROFESSIONAL_SUMMARY.Title"
+      key="PROFESSIONAL_SUMMARY"
     />
-    <CVBlock :data="{ ...SOFTWARE }" :key="SOFTWARE.Title" />
-    <CVBlock :data="{ ...OPERATING_SYSTEMS }" :key="OPERATING_SYSTEMS.Title" />
+    <CVBlock :data="{ ...SOFTWARE }" key="SOFTWARE" />
+    <CVBlock :data="{ ...OPERATING_SYSTEMS }" key="OPERATING_SYSTEMS" />
     <div class="cv-block">
       <h3 class="title">PROFESSIONAL EXPERIENCE</h3>
       <div class="content">
         <CVProject
-          v-for="item in PROFESSIONAL_EXPERIENCE"
-          :key="item"
+          v-for="(item,index) in PROFESSIONAL_EXPERIENCE"
+          :key="index"
           :data="item"
         />
       </div>
@@ -70,9 +70,8 @@ export default {
 .my-cv {
   margin: 20px auto;
   width: 100%;
-  max-width: 960px;
+  max-width: 800px;
   min-height: 600px;
-  min-height: 300px;
   background: #fff;
   border-radius: 3px;
   border: crimson;

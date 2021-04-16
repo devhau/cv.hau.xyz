@@ -1,4 +1,4 @@
-# cv.hau.xyz
+# vue-cv
 
 ## Project setup
 ```
