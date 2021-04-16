@@ -5,5 +5,5 @@
  */
  module.exports = {
     // options...
-    outputDir:'hello'
+    outputDir:'docs'
   }
