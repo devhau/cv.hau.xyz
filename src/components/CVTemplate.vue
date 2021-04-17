@@ -1,19 +1,22 @@
 <template>
   <div class="my-cv">
-    <h2 class="title">{{ Personal.name }} - CV</h2>
+    <h2 class="title"  id="Personal" >{{ Personal.name }} - CV </h2>
+    <h4 style="text-align: center; padding:5px;margin:0px">See : https://cv.hau.xyz </h4>
     <CVPersonal :data="{ ...Personal }" key="CVPersonal" />
     <CVBlock
       :data="{ ...EDUCATIONAL_BACKGROUND }"
       key="EDUCATIONAL_BACKGROUND"
+      DataId="EDUCATIONAL_BACKGROUND"
     />
     <CVBlock
       :data="{ ...PROFESSIONAL_SUMMARY }"
       key="PROFESSIONAL_SUMMARY"
+      DataId="PROFESSIONAL_SUMMARY"
     />
-    <CVBlock :data="{ ...SOFTWARE }" key="SOFTWARE" />
-    <CVBlock :data="{ ...OPERATING_SYSTEMS }" key="OPERATING_SYSTEMS" />
+    <CVBlock :data="{ ...SOFTWARE }" key="SOFTWARE" DataId="SOFTWARE" />
+    <CVBlock :data="{ ...OPERATING_SYSTEMS }" key="OPERATING_SYSTEMS"  DataId="OPERATING_SYSTEMS" />
     <div class="cv-block">
-      <h3 class="title">PROFESSIONAL EXPERIENCE</h3>
+      <h3 class="title" id="PROFESSIONAL_EXPERIENCE">PROFESSIONAL EXPERIENCE</h3>
       <div class="content">
         <CVProject
           v-for="(item,index) in PROFESSIONAL_EXPERIENCE"
@@ -33,6 +36,7 @@ export default {
   data() {
     return {
       Personal: {
+        Image:configs.Image,
         name: configs.name,
         PERSONAL_DETAILS: configs.PERSONAL_DETAILS,
       },

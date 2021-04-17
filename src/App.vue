@@ -1,12 +1,38 @@
 <template>
   <div id="app">
-    <button @click="generateReport()">download CV</button>
+    <div class="panel-outline">
+      <button @click="generateReport()">Download CV</button>
+      
+      <div class="outline">
+        <h3>Outline</h3>
+        <ul>
+          <li>
+            <a href="#Personal">PERSONAL DETAILS</a>
+          </li>
+          <li>
+            <a href="#EDUCATIONAL_BACKGROUND">EDUCATIONAL BACKGROUND</a>
+          </li>
+          <li>
+            <a href="#PROFESSIONAL_SUMMARY">PROFESSIONAL SUMMARY</a>
+          </li>
+          <li>
+            <a href="#SOFTWARE">SOFTWARE</a>
+          </li>
+          <li>
+            <a href="#OPERATING_SYSTEMS">OPERATING SYSTEMS</a>
+          </li>
+          <li>
+            <a href="#PROFESSIONAL_EXPERIENCE">PROFESSIONAL EXPERIENCE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
     <vue-html2pdf
       :show-layout="true"
       :float-layout="true"
       :enable-download="true"
       :preview-modal="false"
-      :paginate-elements-by-height="1400"
       filename="nguyen-van-hau-cv"
       :pdf-quality="2"
       :manual-pagination="false"
@@ -68,8 +94,55 @@ body,html{
   margin: 0;
   overflow: auto;
 }
-#app button{
+#app .panel-outline{
   position: fixed;
   z-index: 10000;
+  width: 250px;
+  height: 400px;
+  left: 10px;
+  top: 10px;
+  background: #987;
+  border: blue 1px solid;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px;
+}
+#app .panel-outline .outline,#app .panel-outline .outline h3{
+  text-align: left;
+}
+#app .panel-outline .outline h3{
+  padding: 20px 0px 10px 0px;
+}
+#app .panel-outline .outline ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#app .panel-outline .outline ul li{
+  padding: 10px 5px;
+}
+#app .panel-outline .outline ul a{
+  color: blue;
+  font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  #app .panel-outline{    
+    width: 50px;
+    height: 20px;
+    left: 2px;
+    top: 2px;
+  }
+   #app .panel-outline *{
+     display: none;
+   }
+   #app .panel-outline:hover{  
+    width: 250px;
+    height: 400px;
+    left: 10px;
+    top: 10px;
+  }
+   #app .panel-outline:hover *{
+     display: unset;
+   }
 }
 </style>

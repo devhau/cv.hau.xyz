@@ -1,6 +1,6 @@
 <template>
     <div class="cv-block">
-         <h3 class="title">{{data.Title}}</h3>
+         <h3 class="title" :id="DataId">{{data.Title}}</h3>
         <div class="content" v-if="data.Type==1">
             <table>
                 <tr v-for="(value, key) in data.Item" :key="key">
@@ -19,7 +19,7 @@
 </template>
 <script>
 export default {
-    props: ['data'],
+    props: ['data','DataId'],
    
 }
 </script>

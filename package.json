@@ -1,5 +1,5 @@
 {
-  "name": "vue-cv",
+  "name": "nguyen-van-hau-cv",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "image-to-base64": "^2.2.0",
     "vue": "^2.6.11",
     "vue-html2pdf": "^1.8.0"
   },

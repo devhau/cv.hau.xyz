@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="col-image">
-        <img src="../assets/image.jpg">
+        <img :src="data.Image">
     </div>
   </div>
 </template>
