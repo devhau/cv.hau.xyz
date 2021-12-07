@@ -35,8 +35,10 @@ export default {
     vertical-align: middle;
     position: relative;
     padding-top: 20px;
+    min-width: 100px;
 }
 .cv-personal .col-image img{
+    min-width: 100px;
     height:90%;
     max-height: 250px;
     border-radius: 2px;

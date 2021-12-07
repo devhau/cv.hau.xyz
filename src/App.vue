@@ -22,6 +22,9 @@
             <a href="#OPERATING_SYSTEMS">OPERATING SYSTEMS</a>
           </li>
           <li>
+            <a href="#SKILL_EXPERIENCE">SKILL EXPERIENCE</a>
+          </li>
+          <li>
             <a href="#PROFESSIONAL_EXPERIENCE">PROFESSIONAL EXPERIENCE</a>
           </li>
         </ul>
@@ -35,7 +38,7 @@
       :preview-modal="false"
       filename="nguyen-van-hau-cv"
       :pdf-quality="2"
-      :manual-pagination="false"
+      :manual-pagination="true"
       pdf-format="a4"
       pdf-orientation="portrait"
       pdf-content-width="800px"

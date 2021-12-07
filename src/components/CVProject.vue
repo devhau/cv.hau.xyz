@@ -7,7 +7,7 @@
             <table class="border-bottom">
                 <tr>
                     <td style="font-weight:700">Project</td>
-                    <td style="font-weight:500">{{data.Project_Name}} </td>
+                    <td style="font-weight:500"><span  class="Project_Name">{{data.Project_Name}}</span></td>
                 </tr>
                 <tr>
                     <td style="font-weight:700">Responsibilities</td>
@@ -42,5 +42,8 @@ export default {
 }
 .cv-project-info table ul{
     list-style: none;
+}
+.cv-project .Project_Name{
+    padding: 5px 10px;
 }
 </style>

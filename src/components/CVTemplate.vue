@@ -1,7 +1,8 @@
 <template>
   <div class="my-cv">
     <h2 class="title"  id="Personal" >{{ Personal.name }} - CV </h2>
-    <h4 style="text-align: center; padding:5px;margin:0px">See : https://cv.hau.xyz </h4>
+    <h4 style="text-align: center; padding:2px;margin:0px">See : https://cv.hau.xyz </h4>
+    <h4 style="text-align: center; padding:2px;margin:0px">Source : https://github.com/devhau/cv.hau.xyz </h4>
     <CVPersonal :data="{ ...Personal }" key="CVPersonal" />
     <CVBlock
       :data="{ ...EDUCATIONAL_BACKGROUND }"
@@ -15,6 +16,7 @@
     />
     <CVBlock :data="{ ...SOFTWARE }" key="SOFTWARE" DataId="SOFTWARE" />
     <CVBlock :data="{ ...OPERATING_SYSTEMS }" key="OPERATING_SYSTEMS"  DataId="OPERATING_SYSTEMS" />
+    <CVSkill :data="{ ...SKILL_EXPERIENCE }" key="SKILL_EXPERIENCE"  DataId="SKILL_EXPERIENCE" />
     <div class="cv-block">
       <h3 class="title" id="PROFESSIONAL_EXPERIENCE">PROFESSIONAL EXPERIENCE</h3>
       <div class="content">
@@ -31,6 +33,7 @@
 import CVPersonal from "./CVPersonal.vue";
 import CVBlock from "./CVBlock.vue";
 import CVProject from "./CVProject.vue";
+import CVSkill from "./CVSkill.vue";
 import configs from "./../configs";
 export default {
   data() {
@@ -60,6 +63,10 @@ export default {
         Item: configs.OPERATING_SYSTEMS,
         Type: 0,
       },
+      SKILL_EXPERIENCE:{
+        Title: "SKILL EXPERIENCE",
+        Items: configs.SKILL_EXPERIENCE,
+      },
       PROFESSIONAL_EXPERIENCE: configs.PROFESSIONAL_EXPERIENCE,
     };
   },
@@ -67,6 +74,7 @@ export default {
     CVPersonal,
     CVBlock,
     CVProject,
+    CVSkill,
   },
 };
 </script>
@@ -84,7 +92,8 @@ export default {
 .my-cv h2.title {
   text-transform: uppercase;
   text-align: center;
-  padding: 15px 0px;
+  padding: 15px 0px 5px 0px;
+  margin: 0%;
 }
 </style>
 <style>
