@@ -82,6 +82,42 @@ export default {
     ],
     PROFESSIONAL_EXPERIENCE: [
         {
+            Project_Name: "UStock",
+            Project_Description: "Stock trading app(IOS/Android)",
+            Time: "11/2022 – 03/2024",
+            Experience_month: 14,
+            Experience: "Fullstack Developer",
+            Role: ["Team Lead","Dev React Native"],
+            Responsibilities: [
+                "Analyze the requirements",
+                "Implement features and follow up on project manager’s tasks",
+                "Create unit test",
+                "Communicate with customer to clarify requirement as well as troubleshoot issue",
+                "Production troubleshoot",
+            ],
+            Technologies: [
+                "React Native"
+            ]
+        },
+        {
+            Project_Name: "UStock",
+            Project_Description: "Investment management for users",
+            Time: "11/2022 – 03/2024",
+            Experience_month: 14,
+            Experience: "Fullstack Developer",
+            Role: ["Team Lead","Dev React Native"],
+            Responsibilities: [
+                "Analyze the requirements",
+                "Implement features and follow up on project manager’s tasks",
+                "Create unit test",
+                "Communicate with customer to clarify requirement as well as troubleshoot issue",
+                "Production troubleshoot",
+            ],
+            Technologies: [
+                "React Native"
+            ]
+        },
+        {
             Project_Name: "StockApp",
             Project_Description: "Investment management for users",
             Time: "11/2021 – 12/2021",
