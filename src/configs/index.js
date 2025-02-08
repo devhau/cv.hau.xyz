@@ -74,7 +74,7 @@ export default {
             SKILL: "Nodejs",
             EXPERIENCE: "2 year",
             LAST_YEAR: "2020"
-        }
+        },
         {
             SKILL: "c++",
             EXPERIENCE: "1 year",
