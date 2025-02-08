@@ -15,11 +15,12 @@ export default {
         "Ha Noi University Of Industry"
     ],
     PROFESSIONAL_SUMMARY: [
-        "Four-year experience in application development and web development.",
-        "One-year experience in robotic process automation",
-        "One-year experience in docker container",
+        "9 year experience in application development and web development.",
+        "2 year experience in robotic process automation",
+        "1 year experience in docker container",
+        "3 year experience in mobile development",
         "Cooperative and able to perform within a team-oriented atmosphere",
-        "Good skills in English"
+        "Good reading skills in English"
     ],
     SOFTWARE: {
         "Databases etc": "PL/SQL, My SQL,SQL Server",
@@ -51,8 +52,8 @@ export default {
         },
         {
             SKILL: "PHP",
-            EXPERIENCE: "4 year",
-            LAST_YEAR: "2021"
+            EXPERIENCE: "7 year",
+            LAST_YEAR: "2024"
         },
         {
             SKILL: "Java",
@@ -73,19 +74,34 @@ export default {
             SKILL: "Nodejs",
             EXPERIENCE: "2 year",
             LAST_YEAR: "2020"
-        },
-        {
-            SKILL: "Reactjs",
-            EXPERIENCE: "1 year",
-            LAST_YEAR: "2020"
-        },
+        }
         {
             SKILL: "c++",
             EXPERIENCE: "1 year",
             LAST_YEAR: "2017"
         }
     ],
-    PROFESSIONAL_EXPERIENCE: [
+    PROFESSIONAL_EXPERIENCE: [{
+            Project_Name: "UERP",
+            Project_Description: "Upgrade the ERP system",
+            Time: "04/2024 – 01/2025",
+            Experience_month: 14,
+            Experience: "Fullstack Developer",
+            Role: ["Team Lead","Dev React Native"],
+            Responsibilities: [
+                "Analyze the requirements",
+                "Implement features and follow up on project manager’s tasks",
+                "Create unit test",
+                "Communicate with customer to clarify requirement as well as troubleshoot issue",
+                "Production troubleshoot",
+            ],
+            Technologies: [
+                "Reactjs",
+                "Laravel(php)",
+                "MySQL",
+                "Redis"
+            ]
+        },
         {
             Project_Name: "UStock",
             Project_Description: "Stock trading app(IOS/Android)",
