@@ -40,6 +40,11 @@ export default {
             LAST_YEAR: "2021"
         },
         {
+            SKILL: "Reactjs + React Native",
+            EXPERIENCE: "3 year",
+            LAST_YEAR: "2024"
+        },
+        {
             SKILL: "RPA",
             EXPERIENCE: "3 year",
             LAST_YEAR: "2021"
