@@ -34,7 +34,7 @@ import CVPersonal from "./CVPersonal.vue";
 import CVBlock from "./CVBlock.vue";
 import CVProject from "./CVProject.vue";
 import CVSkill from "./CVSkill.vue";
-import configs from "./../configs";
+import configs from "../configs";
 export default {
   data() {
     return {

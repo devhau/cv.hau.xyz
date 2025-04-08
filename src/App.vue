@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-cv">
     <div class="panel-outline">
       <button @click="generateReport()">Download CV</button>
       
@@ -30,8 +30,8 @@
         </ul>
       </div>
     </div>
-      
-    <vue-html2pdf
+    <CVTemplate />
+    <!-- <vue-html2pdf
       :show-layout="true"
       :float-layout="true"
       :enable-download="true"
@@ -48,9 +48,9 @@
       ref="html2Pdf"
     >
       <section slot="pdf-content">
-        <CVTemplate />
+        
       </section>
-    </vue-html2pdf>
+    </vue-html2pdf> -->
   </div>
 </template>
 
@@ -84,7 +84,7 @@ body,html{
     padding: 0;
     margin: 0;
 }
-#app {
+#app-cv {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -96,8 +96,10 @@ body,html{
   padding: 0;
   margin: 0;
   overflow: auto;
+  top: 0;
+  left: 0;
 }
-#app .panel-outline{
+#app-cv .panel-outline{
   position: fixed;
   z-index: 10000;
   width: 250px;
@@ -110,32 +112,32 @@ body,html{
   text-align: center;
   padding: 5px;
 }
-#app .panel-outline .outline,#app .panel-outline .outline h3{
+#app-cv .panel-outline .outline,#app-cv .panel-outline .outline h3{
   text-align: left;
 }
-#app .panel-outline .outline h3{
+#app-cv .panel-outline .outline h3{
   padding: 20px 0px 10px 0px;
 }
-#app .panel-outline .outline ul{
+#app-cv .panel-outline .outline ul{
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#app .panel-outline .outline ul li{
+#app-cv .panel-outline .outline ul li{
   padding: 10px 5px;
 }
-#app .panel-outline .outline ul a{
+#app-cv .panel-outline .outline ul a{
   color: blue;
   font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
-  #app .panel-outline{    
+  #app-cv .panel-outline{    
     width: 50px;
     height: 20px;
     left: 2px;
     top: 2px;
   }
-   #app .panel-outline *{
+   #app-cv .panel-outline *{
      display: none;
    }
    #app .panel-outline:hover{  
@@ -144,7 +146,7 @@ body,html{
     left: 10px;
     top: 10px;
   }
-   #app .panel-outline:hover *{
+   #app-cv .panel-outline:hover *{
      display: unset;
    }
 }
