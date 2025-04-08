@@ -1,8 +1,8 @@
 <template>
   <div class="my-cv">
     <h2 class="title"  id="Personal" >{{ Personal.name }} - CV </h2>
-    <h4 style="text-align: center; padding:2px;margin:0px">See : https://cv.hau.xyz </h4>
-    <h4 style="text-align: center; padding:2px;margin:0px">Source : https://github.com/devhau/cv.hau.xyz </h4>
+    <!-- <h4 style="text-align: center; padding:2px;margin:0px">See : https://cv.hau.xyz </h4>
+    <h4 style="text-align: center; padding:2px;margin:0px">Source : https://github.com/devhau/cv.hau.xyz </h4> -->
     <CVPersonal :data="{ ...Personal }" key="CVPersonal" />
     <CVBlock
       :data="{ ...EDUCATIONAL_BACKGROUND }"

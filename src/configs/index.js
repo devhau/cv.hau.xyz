@@ -36,9 +36,9 @@ export default {
     ],
     SKILL_EXPERIENCE: [
         {
-            SKILL: "Vuejs",
-            EXPERIENCE: "1 year",
-            LAST_YEAR: "2021"
+            SKILL: "Nodejs(nestjs)",
+            EXPERIENCE: "3.5 year",
+            LAST_YEAR: "2024"
         },
         {
             SKILL: "Reactjs + React Native",
@@ -46,19 +46,14 @@ export default {
             LAST_YEAR: "2024"
         },
         {
-            SKILL: "RPA",
-            EXPERIENCE: "3 year",
+            SKILL: "Vuejs",
+            EXPERIENCE: "1 year",
             LAST_YEAR: "2021"
         },
         {
             SKILL: "PHP",
             EXPERIENCE: "7 year",
             LAST_YEAR: "2024"
-        },
-        {
-            SKILL: "Java",
-            EXPERIENCE: "1 year",
-            LAST_YEAR: "2020"
         },
         {
             SKILL: "C#",
@@ -68,11 +63,21 @@ export default {
         {
             SKILL: "SQL",
             EXPERIENCE: "5 year",
-            LAST_YEAR: "2020"
+            LAST_YEAR: "2024"
         },
         {
-            SKILL: "Nodejs",
-            EXPERIENCE: "2 year",
+            SKILL: "Mogodb",
+            EXPERIENCE: "1 year",
+            LAST_YEAR: "2023"
+        },
+        {
+            SKILL: "RPA",
+            EXPERIENCE: "3 year",
+            LAST_YEAR: "2021"
+        },
+        {
+            SKILL: "Java",
+            EXPERIENCE: "1 year",
             LAST_YEAR: "2020"
         },
         {
