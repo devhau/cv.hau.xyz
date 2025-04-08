@@ -1,6 +1,6 @@
 {
-  "name": "vue-project",
-  "version": "0.0.0",
+  "name": "nguyen-van-hau-cv",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,9 +10,7 @@
   },
   "dependencies": {
     "html2pdf.js": "^0.10.3",
-    "image-to-base64": "^2.2.0",
-    "vue": "^3.5.13",
-    "vue-html2pdf": "^1.8.0"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
