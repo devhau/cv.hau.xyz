@@ -2,7 +2,7 @@
   <div id="app-cv">
     <div class="panel-outline">
       <button @click="generateReport()">Download CV</button>
-      
+
       <div class="outline">
         <h3>Outline</h3>
         <ul>
@@ -30,7 +30,9 @@
         </ul>
       </div>
     </div>
-    <CVTemplate />
+    <div ref="elHtml2Pdf">
+      <CVTemplate />
+    </div>
     <!-- <vue-html2pdf
       :show-layout="true"
       :float-layout="true"
@@ -55,7 +57,7 @@
 </template>
 
 <script>
-import VueHtml2pdf from "vue-html2pdf";
+import html2pdf from "html2pdf.js";
 import CVTemplate from "./components/CVTemplate.vue";
 
 export default {
@@ -66,29 +68,46 @@ export default {
             refs function generatePdf()
         */
     generateReport() {
-      this.$refs.html2Pdf.generatePdf();
+      html2pdf()
+        .from(this.$refs.elHtml2Pdf)
+        .set(
+          {
+            margin: 0,
+            filename: "nguyen-van-hau-cv.pdf",
+            image: { type: "jpeg", quality: 0.98 },
+            margin: [0.2, 0, 0.22, 0],
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+          }
+        )
+        .save("nguyen-van-hau-cv.pdf")
+        .catch((err) => {
+          console.error(err);
+        });
+      // this.$refs.elHtml2Pdf.generatePdf();
     },
   },
 
   components: {
     CVTemplate,
-    VueHtml2pdf,
   },
 };
 </script>
 
 <style>
-body,html{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
+
 #app-cv {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50; 
+  color: #2c3e50;
   background: #999;
   position: absolute;
   width: 100%;
@@ -99,7 +118,8 @@ body,html{
   top: 0;
   left: 0;
 }
-#app-cv .panel-outline{
+
+#app-cv .panel-outline {
   position: fixed;
   z-index: 10000;
   width: 250px;
@@ -112,42 +132,52 @@ body,html{
   text-align: center;
   padding: 5px;
 }
-#app-cv .panel-outline .outline,#app-cv .panel-outline .outline h3{
+
+#app-cv .panel-outline .outline,
+#app-cv .panel-outline .outline h3 {
   text-align: left;
 }
-#app-cv .panel-outline .outline h3{
+
+#app-cv .panel-outline .outline h3 {
   padding: 20px 0px 10px 0px;
 }
-#app-cv .panel-outline .outline ul{
+
+#app-cv .panel-outline .outline ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#app-cv .panel-outline .outline ul li{
+
+#app-cv .panel-outline .outline ul li {
   padding: 10px 5px;
 }
-#app-cv .panel-outline .outline ul a{
+
+#app-cv .panel-outline .outline ul a {
   color: blue;
   font-weight: 500;
 }
+
 @media only screen and (max-width: 600px) {
-  #app-cv .panel-outline{    
+  #app-cv .panel-outline {
     width: 50px;
     height: 20px;
     left: 2px;
     top: 2px;
   }
-   #app-cv .panel-outline *{
-     display: none;
-   }
-   #app .panel-outline:hover{  
+
+  #app-cv .panel-outline * {
+    display: none;
+  }
+
+  #app .panel-outline:hover {
     width: 250px;
     height: 400px;
     left: 10px;
     top: 10px;
   }
-   #app-cv .panel-outline:hover *{
-     display: unset;
-   }
+
+  #app-cv .panel-outline:hover * {
+    display: unset;
+  }
 }
 </style>
