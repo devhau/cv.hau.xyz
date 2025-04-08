@@ -92,7 +92,7 @@ export default {
             Time: "04/2024 – 01/2025",
             Experience_month: 14,
             Experience: "Fullstack Developer",
-            Role: ["Team Lead","Dev React Native"],
+            Role: ["Team Lead","Rectjs Developer"],
             Responsibilities: [
                 "Analyze the requirements",
                 "Implement features and follow up on project manager’s tasks",
@@ -110,8 +110,8 @@ export default {
         {
             Project_Name: "UStock",
             Project_Description: "Stock trading app(IOS/Android)",
-            Time: "11/2022 – 03/2024",
-            Experience_month: 14,
+            Time: "11/2023 – 07/2024",
+            Experience_month: 8,
             Experience: "Fullstack Developer",
             Role: ["Team Lead","Dev React Native"],
             Responsibilities: [
@@ -126,12 +126,12 @@ export default {
             ]
         },
         {
-            Project_Name: "UStock",
-            Project_Description: "Investment management for users",
-            Time: "11/2022 – 03/2024",
-            Experience_month: 14,
+            Project_Name: "UTracking(java to nestjs)",
+            Project_Description: "Project to track import and export orders by sea",
+            Time: "11/2022 – 07/2023",
+            Experience_month: 10,
             Experience: "Fullstack Developer",
-            Role: ["Team Lead","Dev React Native"],
+            Role: ["Developer"],
             Responsibilities: [
                 "Analyze the requirements",
                 "Implement features and follow up on project manager’s tasks",
@@ -140,7 +140,11 @@ export default {
                 "Production troubleshoot",
             ],
             Technologies: [
-                "React Native"
+                "Nodejs(nestjs)",
+                "Reactjs",
+                "java",
+                "Oracle",
+                "Redis"
             ]
         },
         {
@@ -181,7 +185,6 @@ export default {
                 "Laravel 8.6,php 7.4",
                 "Vue 3, Bootstrap 5,Bootstrap Icon",
                 "Mysql",
-                "Fork from https://github.com/devhau/laravel-vue-vite"
             ]
         },
         {
@@ -202,7 +205,6 @@ export default {
                 "Laravel 8.6,php 7.4",
                 "Vue 3, Bootstrap 5,Bootstrap Icon",
                 "Mysql",
-                "Fork from https://github.com/devhau/laravel-vue-vite"
             ]
         },
         {
@@ -210,7 +212,7 @@ export default {
             Project_Description: "",
             Time: "08/2021 – 08/2021",
             Experience_month: 0.5,
-            Experience: "Nodejs Developer",
+            Experience: "Nodejs Developer(nestjs)",
             Role: ["DEV"],
             Responsibilities: [
                 "Analyze the requirements",
@@ -220,7 +222,9 @@ export default {
                 "Production troubleshoot",
             ],
             Technologies: [
-                "Serverless function(google)"
+                "nestjs",
+                "MySQL",
+                "Redis"
             ]
         },
         {
@@ -245,9 +249,9 @@ export default {
         {
             Project_Name: "NFTAuc",
             Project_Description: "",
-            Time: "04/2021 – 07/2021",
-            Experience_month: 3,
-            Experience: "Nodejs Developer",
+            Time: "04/2021 – 10/2021",
+            Experience_month: 6,
+            Experience: "Nodejs Developer(nestjs)",
             Role: ["DEV"],
             Responsibilities: [
                 "Analyze the requirements",
